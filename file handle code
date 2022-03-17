@@ -1,0 +1,26 @@
+file = open('sahaj14.txt','w') 
+file.write("A dream is a succession of images, ideas, emotions, and sensations that usually occur involuntarily in the mind during certain stages of sleep\n Humans spend about two hours dreaming per night, and each dream lasts around 5 to 20 minutes\n The content and function of dreams have been a topic of scientific, philosophical and religious interest throughout recorded history\n A nightmare is an unpleasant dream that can cause a strong negative emotional response from the mind, typically fear or horror, but also despair, anxiety and great sadness.\n The dream may contain situations of danger, discomfort, psychological or physical terror.\n Sufferers usually awaken in a state of distress and may be unable to return to sleep for a prolonged period of time.\n") 
+file.close() 
+file = open('sahaj14.txt','r')
+content = file.read() 
+print(f"{content}\n")
+file.close() 
+
+#To count number of lines, characters and lines
+
+file = open('sahaj14.txt','r') 
+lines = file.readlines() 
+line = 0 
+word = 0 
+ch = 0 
+for i in content:     
+  ch = ch + 1 
+  
+for i in lines:     
+  line = line + 1 
+
+for i in content.split():     
+  word = word + 1 
+print(f'Character count = {ch}') 
+print(f'Word count = {word}') 
+print(f'Line count = {line}') 
